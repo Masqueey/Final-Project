@@ -1,0 +1,479 @@
+#LyX 1.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 221
+\textclass article
+\begin_preamble
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{geometry}
+\geometry{verbose,letterpaper,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+
+\makeatletter
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+\usepackage{pslatex}
+
+\makeatletter
+\usepackage{babel}
+\makeatother
+
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+
+\usepackage{babel}
+\makeatother
+\end_preamble
+\options english,english,english,english,english,english,english,english,english,english,english
+\language english
+\inputencoding auto
+\fontscheme default
+\graphics default
+\paperfontsize default
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\use_natbib 0
+\use_numerical_citations 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Title
+
+The FERET Browser
+\layout Abstract
+
+The Feret Browser Graphical User Interface system aids in selecting the
+ person specific and image specific covariates for each of the images present
+ in the database.
+ The output is a file which ..........................
+\layout Section
+
+Installation:
+\layout Subsection
+
+Creating the Binaries:
+\layout Standard
+
+The Feret Browser system is written in QT, you need to have the standard
+ QT libraries installed on the host system.
+ Use the following to compile and run the browser.
+\layout LyX-Code
+
+qmake -project
+\layout LyX-Code
+
+qmake
+\layout LyX-Code
+
+make 
+\layout Section
+
+System Overview:
+\layout Subsection
+
+Command Line arguments:
+\layout Standard
+
+The application takes three command line arguments.
+\layout Paragraph
+
+
+\series medium 
+First argument - specifies the folder containing the original Feret Images.
+\layout Paragraph
+
+
+\series medium 
+Second argument - specifies the folder containing the normalized Images.
+\layout Paragraph
+
+
+\series medium 
+Third argument - This is an optional argument.
+ Suppose there exits a file 'A' with the details of the covariates of ten
+ subjects.
+ Now details of subjects other then those ten need to be appended to the
+ file 'A'.
+ Then the Feret Browser needs to be opend with this third argument in addition
+ to the first and second arguments.
+ In this case the third argument needs to specify the path where file 'A'
+ exists.
+\layout Subsection
+
+When the Feret Browser loads up, the application window looks as follows:
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+protect 
+\end_inset 
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+protect 
+\end_inset 
+
+
+\newline 
+ 
+\layout Standard
+
+
+\begin_inset ERT
+status Collapsed
+
+\layout Standard
+
+\backslash 
+includegraphics[%
+\newline 
+  scale=0.5]{/s/chopin/a/grad/charu/vision/csuFaceIdEval.4.0/browser/doc/snap3.jpg}
+\end_inset 
+
+
+\layout Paragraph
+
+
+\series medium 
+At the upper left corner of the window the original image of the person
+ is displayed.
+ 
+\layout Paragraph
+
+
+\series medium 
+Besides the original image the normalized image of the person loads up which
+ is smaller in size than the original image.
+ 
+\layout Paragraph
+
+
+\series medium 
+Below the images a table is seen which gives details about both the images.
+ 
+\layout Paragraph
+
+
+\series medium 
+On the right side of the images, radio buttons are seen which can be used
+ to select the person and image specific covariates.
+ 
+\layout Subsection
+
+Person specific covariates: 
+\layout Subparagraph
+
+Are attributes that define the person in general and have the same value
+ for all the images of the person in the database.
+\layout Itemize
+
+Gender 
+\layout Itemize
+
+Race 
+\layout Itemize
+
+Age 
+\layout Itemize
+
+Skin 
+\layout Subsection
+
+Image specific covariates:
+\layout Subparagraph
+
+Are attributes that define the person in the image and may vary for the
+ images of the person in the database.
+\layout Itemize
+
+Glasses 
+\layout Itemize
+
+Facial Hair 
+\layout Itemize
+
+Expression 
+\layout Itemize
+
+Mouth 
+\layout Itemize
+
+Eyes 
+\layout Itemize
+
+Bangs 
+\layout Itemize
+
+Makeup 
+\layout Subsubsection*
+
+
+\series medium 
+Below the Radio buttons there are five buttons, which are used to load,
+ store and clear the covariates data selected by the Radio buttons as their
+ name indicates.
+ The keyboard Grab is for disabling and enabling the keyboard short-cuts
+ and the last button is for closing and exiting the Feret Browser.
+\layout Section
+
+Detailed operation of the System:
+\layout Enumerate
+
+Choose any image by clicking on the image name displayed in the table below
+ the images.
+ 
+\layout Enumerate
+
+On doing so the original image shows up along with the normalized image.
+ On the basis of the original image, the image covariates need to be selected.
+ The person specific covariates once selected remains the same for all the
+ images of the same subject.
+ 
+\layout Enumerate
+
+Every image that is selected before the Feret Browser is closed is marked
+ by a 'YES' in the last column named ' DATA' of the table.
+ The ' YES ' in this column indicates that the covariates for those images
+ have been selected.
+ 
+\layout Subsection
+
+SaveData Button
+\layout Subparagraph
+
+
+\series medium 
+When this button is clicked a dialog box props up in which the name of a
+ file needs to be specified.
+ This operation writes to that file a 'number' which, indicates the number
+ of images whose details will get saved to the same file.
+ Following this number, details of all the images marked with a 'YES' in
+ the 'DATA' column of the table are saved into the file.
+ The details include the person and image specific covariates.
+ In addition to this the file contains the values set for two variables
+ for each of the images saved.
+ The first being 'AGE2'.
+ This variable takes values of either 'YOUNG' or 'OLD'.
+ The variable takes the value 'YOUNG', if the person in the image has his
+ 'AGE' (person specific covariate) set to 30 or below 30.
+ Else 'AGE2' is set to 'OLD'.
+ The second variable is 'SKIN2'.
+ It also takes 2 values 'CLEAR' or 'OTHER'.
+ It is set to 'CLEAR' if the 'SKIN' (person specific covariate) is set to
+ 'CLEAR' else it is set to 'OTHER'.
+\layout Subsection
+
+LoadData Button 
+\layout Subparagraph
+
+
+\series medium 
+When this button is clicked a dialog box props up and lets the user choose
+ the file ( this file should be the one created by the SaveData button or
+ along the similar format) to be loaded.
+ The LoadData button can be used several times to load different files.
+ This is one by which covariate values for different images from several
+ files can be combined.
+  
+\layout Subsection
+
+ClearData Button
+\layout Subparagraph
+
+
+\series medium 
+This button aids to clear all the covariate selection made for all the images
+ chosen before the click of this button.
+ Also the 'YES' value set in the Last 'DATA' column of the table is now
+ set to 'NO'.
+ The click of the ClearData button resets the covariates to their default
+ value, and helps to start the selection afresh.
+\layout Subsection
+
+Keyboard Grab
+\layout Subparagraph
+
+
+\series medium 
+There are some keyboard short-cuts for selecting only the person specific
+ covariates.
+ This is by default disabled.
+ To enable these short-cuts this button needs to be used.
+ This is a toggle button.
+ On enabling the Keyboard Grab, the Feret Browser revives all the key board
+ shortcuts and any other application will not get any keyboard events until
+ the Keyboard Grab has been deactivated.
+\layout Subsubsection
+
+The Keyboard Short-cuts are as follows:
+\layout Paragraph
+
+Gender : 
+\layout Subparagraph
+
+
+\series medium 
+key 1 -Male
+\layout Subparagraph
+
+
+\series medium 
+key 2 - Female
+\layout Paragraph
+
+Race :
+\layout Subparagraph
+
+
+\series medium 
+key q - White
+\layout Subparagraph
+
+
+\series medium 
+key w - Black
+\layout Subparagraph
+
+
+\series medium 
+key e - Asian
+\layout Subparagraph
+
+
+\series medium 
+key r - Other
+\layout Paragraph
+
+Age:
+\layout Subparagraph
+
+
+\series medium 
+key a - Teen
+\layout Subparagraph
+
+
+\series medium 
+key s - 20
+\layout Subparagraph
+
+
+\series medium 
+key d - 30
+\layout Subparagraph
+
+
+\series medium 
+key f - 40
+\layout Subparagraph
+
+
+\series medium 
+key g - 50
+\layout Subparagraph
+
+
+\series medium 
+key h - 60+
+\layout Paragraph
+
+Skin:
+\layout Subparagraph
+
+
+\series medium 
+key z - Clear
+\layout Subparagraph
+
+
+\series medium 
+key x - Freckled
+\layout Subparagraph
+
+
+\series medium 
+key c - Wrinkled
+\layout Subparagraph
+
+
+\series medium 
+key v - Both
+\layout Subparagraph
+
+
+\series medium 
+key b - Other
+\layout Subparagraph
+
+
+\series medium 
+The lower or upper case of the keys have the same effect when the Keyboard
+ Grab is activated.
+\layout Subsection
+
+Quit Button
+\layout Subparagraph
+
+
+\series medium 
+The Feret Browser can be closed and exited gracefully on clicking the Quit
+ button.
+\the_end

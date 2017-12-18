@@ -1,0 +1,12 @@
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00001fa010_930831.pgm	99	168	166	164
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fa010_930831.pgm	99	168	112	163
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fa010_930831.pgm	111	163	166	158
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fa010_940128.pgm	82	168	157	162
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fa010_940928.pgm	99	192	163	189
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fb010_930831.pgm	106	166	157	160
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fb010_940422.pgm	112	182	178	181
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00002fb010_940928.pgm	101	190	166	188
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00003fa010_930831.pgm	113	182	170	181
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00003fa010_940307.pgm	82	179	161	176
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00003fa010_941121.pgm	82	179	150	184
+/s/chopin/a/grad/charu/vision/csuFaceBackup/browser/testSource/00003fa011d_931230.pgm	107	197	182	196
